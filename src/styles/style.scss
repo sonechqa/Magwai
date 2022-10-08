@@ -1,4 +1,12 @@
+body {
+    background-color: #272727;
+}
+
+
+
 @import 'utils/fonts';
+@import 'utils/_sprite';
+@import 'utils/variables';
 
 @import '../local_modules/normalize.css/normalize.css';
 
@@ -10,3 +18,4 @@
 
 @import 'pages/index';
 
+@import 'components/button';

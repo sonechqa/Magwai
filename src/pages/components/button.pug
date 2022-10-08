@@ -1,0 +1,10 @@
+- var buttonText;
+- var buttonIcon;
+- var buttonTheme;
+- var buttonSize;
+
+include ../common/mixins
+
+button.button(class=`button--theme-${buttonTheme} button--size-${buttonSize}`)
+    +icon(buttonIcon)
+    span.button__subject=buttonText

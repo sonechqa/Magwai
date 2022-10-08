@@ -1,13 +1,4 @@
 @font-face {
-	font-family: 'HelveticaNeueCyr-Roman';
-	src: url('../fonts/helveticaneuecyr-roman.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/helveticaneuecyr-roman.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/helveticaneuecyr-roman.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/helveticaneuecyr-roman.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/helveticaneuecyr-roman.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/helveticaneuecyr-roman.svg#helveticaneuecyr-roman') format('svg'); /* Chrome < 4, Legacy iOS */
-}
-@font-face {
 	font-family: 'Cuprum';
 	src: url('../fonts/cuprum.eot'); /* IE 9 Compatibility Mode */
 	src: url('../fonts/cuprum.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
@@ -16,24 +7,7 @@
 		url('../fonts/cuprum.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/cuprum.svg#cuprum') format('svg'); /* Chrome < 4, Legacy iOS */
 }
-@font-face {
-	font-family: 'Bebas Neue Regular';
-	src: url('../fonts/bebas_neue_regular.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/bebas_neue_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/bebas_neue_regular.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/bebas_neue_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/bebas_neue_regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/bebas_neue_regular.svg#bebas_neue_regular') format('svg'); /* Chrome < 4, Legacy iOS */
-}
-@font-face {
-	font-family: 'HelveticaNeueCyr-LightItalic';
-	src: url('../fonts/helveticaneuecyr-lightitalic.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/helveticaneuecyr-lightitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/helveticaneuecyr-lightitalic.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/helveticaneuecyr-lightitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/helveticaneuecyr-lightitalic.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/helveticaneuecyr-lightitalic.svg#helveticaneuecyr-lightitalic') format('svg'); /* Chrome < 4, Legacy iOS */
-}
+
 @font-face {
 	font-family: 'Cuprum Italic';
 	src: url('../fonts/cuprum_italic.eot'); /* IE 9 Compatibility Mode */
@@ -42,4 +16,9 @@
 		url('../fonts/cuprum_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
 		url('../fonts/cuprum_italic.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/cuprum_italic.svg#cuprum_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Montserrat Bold';
+	src: url('../src/fonts/Montserrat-Bold.ttf') format('truetype');
 }

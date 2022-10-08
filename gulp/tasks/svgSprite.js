@@ -29,10 +29,10 @@ module.exports = function sprite() {
       svgSprite({
         mode: {
           symbol: {
-            sprite: "src/build/sprite.svg",
+            sprite: "sprite.svg",
             render: {
               scss: {
-                dest: "src/styles/_sprite.scss",
+                dest: "../../src/styles/utils/_sprite.scss",
                 template: "gulp/svg-template.scss",
               },
             },
