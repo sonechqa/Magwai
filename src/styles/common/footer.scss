@@ -1,0 +1,238 @@
+.footer {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 686px) {
+            position: relative;
+        }
+    }
+    background-image: url("/img/footer/background.jpg");
+    @media screen and (max-width: 686px) {
+        background-size: cover;
+        padding-bottom: 40px;
+    }
+    margin-top: 108px;
+    &__img-logo {
+        margin-left: 71px;
+        margin-top: 75px;
+        @media screen and (max-width: 686px) {
+            margin-top: 25px;
+        }
+    }
+    &__adaptive {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+        @media screen and (min-width: 687px) {
+            display: none;
+        }
+    }
+    &__adaptive-link {
+        font-family: 'Bebas Neue Regular';
+        font-size: 15px;
+        color: #000000;
+        line-height: 30px;
+        transition: color ease 0.3s;
+        &:hover {
+            color: #464545;
+        }
+    }
+    &__links {
+        max-width: 264px;
+        width: 100%;
+        @media screen and (max-width: 686px) {
+            margin: auto;
+        }
+    }
+    &__socials {
+        width: 100%;
+        margin-top: 71px;
+        margin-bottom: 76px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        position: relative;
+        @media screen and (max-width: 686px) {
+            margin-top: 40px;
+        }
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 41px;
+        height: 41px;
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: #d3cac9;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            transition: background-color ease 0.3s;
+        }
+        &:hover {
+            &::before {
+                background-color: #e0d5d4;
+            }
+        }
+        @media screen and (max-width: 786px) {
+            width: 38px;
+            height: 38px;
+        }
+    }
+    &__img {
+        position: relative;
+        z-index: 2;
+    }
+    &__wrapper {
+        width: 702px;
+        margin-right: 48px;
+        @media screen and (max-width: 1130px) {
+            margin-left: 15px;
+        }
+        @media screen and (max-width: 1010px) {
+            margin-right: 20px;
+        }
+        @media screen and (max-width: 686px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-right: 0;
+            margin-left: 0;
+            width: 0;
+        }
+    }
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 62px;
+        margin-bottom: 0;
+        padding-left: 0;
+        @media screen and (max-width: 686px) {
+            display: none;
+        }
+    }
+    &__about-project {
+        list-style-type: none;
+        @media screen and (max-width: 984px) {
+            &:not(:last-child) {
+                padding-right: 20px;
+            }
+        }
+    }
+    &__advertisement {
+        font-family: 'Cuprum';
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.47);
+        letter-spacing: 4px;
+        transition: color ease 0.3s;
+        &:hover {
+            color: rgba(44, 43, 43, 0.47);
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: 16px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 686px) {
+            display: none;
+        }
+    }
+    &__menu-links {
+        margin-top: 45px;
+    }
+    &__title {
+        display: inline-block;
+        font-family: 'Bebas Neue Regular';
+        font-size: 15px;
+        color: #000000;
+        letter-spacing: 3px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: color ease 0.3s;
+        &:hover {
+            color: #4d4b4b;
+        }
+        @media screen and (max-width: 886px) {
+            font-size: 13px;
+        }
+        @media screen and (max-width: 786px) {
+            font-size: 10px;
+        }
+    }
+    &__menu-link {
+        display: block;
+        font-family: 'Cuprum';
+        font-size: 16px;
+        color: #7c7c7c;
+        transition: color ease 0.3s;
+        &:not(:last-child) {
+            margin-bottom: 19px;
+        }
+        &:hover {
+            color: #ada9a9;;
+        }
+        @media screen and (max-width: 886px) {
+            font-size: 14px;
+        }
+    }
+    &__copyright {
+        font-family: 'Bebas Neue Regular';
+        font-size: 12px;
+        color: #a19994;
+        letter-spacing: 3px;
+        margin-top: 51px;
+        @media screen and (max-width: 984px) {
+            margin-top: 27px;
+        }
+        @media screen and (max-width: 886px) {
+            margin-top: 51px;
+        }
+        @media screen and (max-width: 786px) {
+            font-size: 10px;
+        }
+        @media screen and (max-width: 736px) {
+            margin-top: 37px;
+        }
+        @media screen and (max-width: 686px) {
+            position: absolute;
+            left: 26%;
+        }
+        @media screen and (max-width: 636px) {
+            position: absolute;
+            left: 24%;
+        }
+        @media screen and (max-width: 536px) {
+            position: absolute;
+            left: 20%;
+        }
+        @media screen and (max-width: 486px) {
+            position: absolute;
+            left: 17%;
+        }
+        @media screen and (max-width: 436px) {
+            position: absolute;
+            left: 13%;
+        }
+        @media screen and (max-width: 386px) {
+            position: absolute;
+            left: 8%;
+        }
+        @media screen and (max-width: 320px) {
+            position: absolute;
+            left: 2%;
+            text-align: center;
+        }
+    }
+}
