@@ -1,18 +1,20 @@
 header.header.container
+  include ../components/burger
   a.header__logo(href="/")
     img(src="/img/logo.svg" alt="Magwai")
-  nav.header__navigation
-    a.header__link(href="#") УСЛУГИ
-    a.header__link(href="#") АБОНЕМЕНТЫ
-    a.header__link(href="#") ПОЧЕМУ МЫ
-    a.header__link(href="#") ОБОРУДОВАНИЕ
-    a.header__link(href="#") АКЦИИ
-    a.header__link(href="#") FAQ
-    a.header__link(href="#") КОНТАКТЫ
-  .header__buttons
-    each val in [{icon: 'phone', theme: "dark", size: "small"}, {text: 'ОСТАВИТЬ ЗАЯВКУ', theme: "light", size: "big"}]
-      - buttonText = val.text;
-      - buttonIcon = val.icon;
-      - buttonTheme = val.theme;
-      - buttonSize = val.size;
-      include ../components/button
+  .header__wrapper
+    nav.header__navigation
+      a.header__link(href="#") УСЛУГИ
+      a.header__link(href="#") АБОНЕМЕНТЫ
+      a.header__link(href="#") ПОЧЕМУ МЫ
+      a.header__link(href="#") ОБОРУДОВАНИЕ
+      a.header__link(href="#") АКЦИИ
+      a.header__link(href="#") FAQ
+      a.header__link(href="#") КОНТАКТЫ
+    .header__buttons
+      each val in [{icon: 'phone', theme: "dark", size: "small"}, {text: 'ОСТАВИТЬ ЗАЯВКУ', theme: "light", size: "big"}]
+        - buttonText = val.text;
+        - buttonIcon = val.icon;
+        - buttonTheme = val.theme;
+        - buttonSize = val.size;
+        include ../components/button

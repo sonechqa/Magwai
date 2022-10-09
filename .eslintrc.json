@@ -15,8 +15,7 @@
           4
         ],
         "semi": [
-          "error",
-          "never"
+          "always"
         ],
         "quotes": [
           "error",

@@ -1,14 +1,4 @@
 @font-face {
-	font-family: 'Cuprum';
-	src: url('../fonts/cuprum.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/cuprum.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/cuprum.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/cuprum.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/cuprum.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/cuprum.svg#cuprum') format('svg'); /* Chrome < 4, Legacy iOS */
-}
-
-@font-face {
 	font-family: 'Cuprum Italic';
 	src: url('../fonts/cuprum_italic.eot'); /* IE 9 Compatibility Mode */
 	src: url('../fonts/cuprum_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
@@ -19,6 +9,7 @@
 }
 
 @font-face {
-	font-family: 'Montserrat Bold';
-	src: url('../src/fonts/Montserrat-Bold.ttf') format('truetype');
+	font-family: 'Montserrat';
+	font-weight: 700;
+	src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
 }
