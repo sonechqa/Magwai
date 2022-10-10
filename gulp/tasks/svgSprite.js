@@ -1,8 +1,8 @@
 const gulp = require("gulp");
-var svgSprite = require("gulp-svg-sprite"),
-  svgmin = require("gulp-svgmin"),
-  cheerio = require("gulp-cheerio"),
-  replace = require("gulp-replace");
+const svgSprite = require("gulp-svg-sprite");
+const svgmin = require("gulp-svgmin");
+const cheerio = require("gulp-cheerio");
+const replace = require("gulp-replace");
 
 module.exports = function sprite() {
   return gulp

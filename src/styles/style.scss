@@ -8,16 +8,16 @@ body {
 @import 'utils/_sprite';
 @import 'utils/variables';
 
-@import '../local_modules/normalize.css/normalize.css';
+@import '../modules/normalize.css/normalize.css';
+@import '../modules/@splidejs/splide/dist/css/splide.min.css';
 
 @import 'common/global';
-
 @import 'common/header';
-
 @import 'common/footer';
 
-@import 'pages/index';
-
 @import 'components/button';
-
 @import 'components/burger';
+
+@import 'sections/slider.scss';
+
+@import 'pages/index';
