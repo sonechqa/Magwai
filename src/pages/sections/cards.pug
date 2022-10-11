@@ -1,0 +1,24 @@
+.cards.container
+    h1.cards__heading КАРТОЧКИ
+    .cards__wrapper
+        - 
+            var items = [
+            {img: 'img/card1.jpg', title: "BRIDGE"}, 
+            {img: 'img/card2.jpg', title: "WATER"}, 
+            {img: 'img/card3.jpg', title: "BRIDGE"}, 
+            {img: 'img/card4.jpg', title: "BRIDGE"}, 
+            {img: 'img/card5.jpg', title: "BRIDGE"}, 
+            {img: 'img/card6.jpg', title: "FOREST"}, 
+            {img: 'img/card7.jpg', title: "FOREST"}, 
+            {img: 'img/card8.jpg', title: "NATURE"}, 
+            {img: 'img/card9.jpg', title: "NATURE"},
+            {img: 'img/card10.jpg', title: "NATURE"}]
+        each val in items
+            - cardImg = val.img
+            - cardTitle = val.title;
+            include ../components/card
+    .cards__button
+        - buttonText = 'ЗАГРУЗИТЬ ЕЩЕ'
+        - buttonTheme = 'light'
+        - buttonSize = 'big'
+        include ../components/button

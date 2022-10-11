@@ -1,0 +1,14 @@
+- var cardImg
+- var cardTitle
+
+.card
+    img(src=cardImg)
+    h3.card__title=cardTitle
+    h4.card__subtitle How to increase your productivity with a Music
+    p.card__description Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+    p.card__posted Posted by Eugenia, on July 24, 2019
+    .card__button
+        - buttonText = 'Continue reading'
+        - buttonTheme = 'black'
+        - buttonSize = 'big'
+        include ../components/button

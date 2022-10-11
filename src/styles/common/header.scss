@@ -119,6 +119,16 @@
             margin: 50px auto;
             width: 100%;
         }
+
+        .button {
+            &--size {
+                &-big {
+                    @media screen and (max-width: 710px) {
+                        width: 90%;
+                    }
+                }
+            }
+        }
     }
 
     &--overlay {
