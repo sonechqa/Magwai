@@ -104,10 +104,6 @@
         
         &-big {
             padding: 20px 75px;
-
-            @media screen and (max-width: 820px) {
-                padding: 20px 35px;
-            }
         }
     }
 }

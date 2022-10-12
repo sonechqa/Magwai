@@ -123,6 +123,10 @@
         .button {
             &--size {
                 &-big {
+                    @media screen and (max-width: 820px) {
+                        padding: 20px 35px;
+                    }
+
                     @media screen and (max-width: 710px) {
                         width: 90%;
                     }

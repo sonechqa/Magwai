@@ -1,0 +1,7 @@
+
+@mixin width-by-items-amount($n) {
+    max-width: calc((100% - (30px * (#{$n} - 1))) / #{$n});
+    &:not(:nth-child(#{$n}n)) {
+        margin-right: 30px;
+    }
+}

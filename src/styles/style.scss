@@ -8,6 +8,9 @@ body {
 @import 'utils/_sprite';
 @import 'utils/variables';
 
+@import 'mixins/media';
+@import 'mixins/helpers';
+
 @import '../modules/normalize.css/normalize.css';
 @import '../modules/@splidejs/splide/dist/css/splide.min.css';
 

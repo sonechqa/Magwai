@@ -3,6 +3,11 @@
         margin-top: 50px;
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
+
+        @media screen and (max-width: 725px) {
+            justify-content: center;
+        }
     }
 
     &__heading {
@@ -12,14 +17,19 @@
         font-size: 42px;
         color: #FFFFFF;
         margin-top: 50px;
+
+        @media screen and (max-width: 1020px) {
+            font-size: 36px;
+        }
+
+        @media screen and (max-width: 710px) {
+            font-size: 30px;
+        }
     }
 
     &__button {
         max-width: 280px;
         margin: 0 auto;
-    }
-
-    @media screen and (max-width: 1800px) {
-        width: 80%;
+        margin-top: 40px;
     }
 }

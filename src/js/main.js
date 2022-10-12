@@ -45,3 +45,28 @@ burger.addEventListener(`click`, function () {
   header.classList.toggle(`header--overlay`);
   slider.classList.toggle(`slider--down`);
 });
+
+const button = document.querySelector(`.cards__button`);
+const wrapper = document.querySelector(`.cards__wrapper`);
+button.addEventListener(`click`, function () {
+  fetch(`https://jsonplaceholder.typicode.com/posts?_start=0&_limit=6`)
+    .then((response) => response.json())
+    .then((posts) => {
+      posts.forEach((post) => {
+        wrapper.innerHTML += `<div class="card">
+        <img src="img/card1.jpg">
+        <h3 class="card__title">BRIDGE</h3>
+        <h4 class="card__subtitle">${post.title}</h4>
+        <p class="card__description">${post.body}</p>
+        <p class="card__posted">Posted by Eugenia, on July 24, 2019</p>
+        <div class="card__button">
+          <button class="button button--theme-black button--size-big">
+              <svg class="icon icon-undefined ">
+              <use xlink:href="/symbol/sprite.svg#undefined"></use>
+              </svg><span class="button__subject">Continue reading</span>
+          </button>
+        </div>
+      </div>`;
+      });
+    });
+});

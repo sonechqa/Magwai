@@ -1,11 +1,30 @@
 .card {
     background-color: #FFFFFF;
-    max-width: 320px;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
 
-    &:not(:nth-child(5n)) {
-        margin-right: 30px;
+    @media screen and (min-width: 1721px) {
+        @include width-by-items-amount(5);
     }
+
+    @media screen and (max-width: 1720px) and (min-width: 1421px) {
+        @include width-by-items-amount(4);
+    }
+
+    @media screen and (max-width: 1420px) and (min-width: 921px) {
+        @include width-by-items-amount(3);
+    }
+
+    @media screen and (max-width: 920px) and (min-width: 521px) {
+        @include width-by-items-amount(2);
+    }
+
+    @media screen and (max-width: 520px) {
+        @include width-by-items-amount(1);
+    }
+
 
     &__title {
         font-family: 'Mulish';
@@ -50,7 +69,28 @@
     }
 
     &__button {
-        max-width: 280px;
-        margin: 10px auto;
+        margin-top: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .button {
+            &--size {
+                &-big {
+                    width: 100%;
+
+                    @media screen and (max-width: 1120px) {
+                        padding: 20px 50px;
+                    }
+
+                    @media screen and (max-width: 620px) {
+                        padding: 20px 30px;
+                    }
+
+                    @media screen and (max-width: 530px) {
+                        padding: 20px 20px;
+                    }
+                }
+            }
+        }
     }
 }
