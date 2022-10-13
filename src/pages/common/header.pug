@@ -12,9 +12,10 @@ header.header.container
       a.header__link(href="#") FAQ
       a.header__link(href="#") КОНТАКТЫ
     .header__buttons
-      each val in [{icon: 'phone', theme: "dark", size: "small"}, {text: 'ОСТАВИТЬ ЗАЯВКУ', theme: "light", size: "big"}]
+      each val in [{icon: 'phone', theme: "dark", size: "small"}, {text: 'ОСТАВИТЬ ЗАЯВКУ', theme: "light", size: "big", dataRequest: true}]
         - buttonText = val.text;
         - buttonIcon = val.icon;
         - buttonTheme = val.theme;
         - buttonSize = val.size;
+        - dataRequest = val.dataRequest
         include ../components/button

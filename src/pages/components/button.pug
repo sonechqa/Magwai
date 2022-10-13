@@ -2,9 +2,9 @@
 - var buttonIcon;
 - var buttonTheme;
 - var buttonSize;
+- var dataRequest;
 
 include ../common/mixins
-
-button.button(class=`button--theme-${buttonTheme} button--size-${buttonSize}`)
+button.button(class=`button--theme-${buttonTheme} button--size-${buttonSize}`, data-request=dataRequest || false)
     +icon(buttonIcon)
     span.button__subject=buttonText

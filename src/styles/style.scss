@@ -16,13 +16,14 @@ body {
 
 @import 'common/global';
 @import 'common/header';
-@import 'common/footer';
 
 @import 'components/button';
 @import 'components/burger';
 @import 'components/card';
+@import 'components/input';
 
 @import 'sections/slider.scss';
 @import 'sections/cards.scss';
+@import 'sections/popUp.scss';
 
 @import 'pages/index';

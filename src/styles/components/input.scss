@@ -1,0 +1,34 @@
+.input {
+    position: relative;
+    margin-bottom: 20px;
+
+    input {
+        width: 100%;
+        padding: 20px 35px;
+        background-color: transparent;
+        border: 1px solid #2B2B2B;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    input:focus ~ label, input:not(:placeholder-shown) ~ label {
+        transform: translateX(8px) translateY(-20px) scale(0.8);
+        transform-origin: left;
+    }
+
+    label {
+        position: absolute;
+        left: 0;
+        top: 35%;
+        padding-left: 35px;
+        transition: transform 0.3s;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+}

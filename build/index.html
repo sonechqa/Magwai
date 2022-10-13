@@ -24,7 +24,7 @@
                         <use xlink:href="/symbol/sprite.svg#phone"></use>
                       </svg><span class="button__subject"></span>
           </button>
-          <button class="button button--theme-light button--size-big">
+          <button class="button button--theme-light button--size-big" data-request>
                       <svg class="icon icon-undefined ">
                         <use xlink:href="/symbol/sprite.svg#undefined"></use>
                       </svg><span class="button__subject">ОСТАВИТЬ ЗАЯВКУ</span>
@@ -49,7 +49,7 @@
           <h1 class="slider__title">ПОЛЕТ ИЛОНА МАСКА <br> И DOGIE COIN</h1>
           <p class="slider__subtitle">В прошлый четверг все офигели от полета DOGIE COIN на Марс</p>
           <div class="slider__button">
-            <button class="button button--theme-light button--size-big">
+            <button class="button button--theme-light button--size-big" data-request>
                           <svg class="icon icon-undefined ">
                             <use xlink:href="/symbol/sprite.svg#undefined"></use>
                           </svg><span class="button__subject">ОСТАВИТЬ ЗАЯВКУ</span>
@@ -60,7 +60,7 @@
           <h1 class="slider__title">DOGIE COIN <br> УПАЛ</h1>
           <p class="slider__subtitle">Все в шоке, я потерял все деньги</p>
           <div class="slider__button">
-            <button class="button button--theme-light button--size-big">
+            <button class="button button--theme-light button--size-big" data-request>
                           <svg class="icon icon-undefined ">
                             <use xlink:href="/symbol/sprite.svg#undefined"></use>
                           </svg><span class="button__subject">ОСТАВИТЬ ЗАЯВКУ</span>
@@ -71,7 +71,7 @@
           <h1 class="slider__title">ЭПИЧЕСКОЕ ВОЗВРАЩЕНИЕ НА ХАИ</h1>
           <p class="slider__subtitle">Все в шоке, я снова богат </p>
           <div class="slider__button">
-            <button class="button button--theme-light button--size-big">
+            <button class="button button--theme-light button--size-big" data-request>
                           <svg class="icon icon-undefined ">
                             <use xlink:href="/symbol/sprite.svg#undefined"></use>
                           </svg><span class="button__subject">ОСТАВИТЬ ЗАЯВКУ</span>
@@ -226,8 +226,35 @@
           </button>
         </div>
       </div>
+      <div class="popUp"><img src="img/pop-up/moon.png" alt="Луна">
+        <div class="popUp__request">
+          <div class="popUp__title">ОСТАВЬТЕ ЗАЯВКУ</div>
+          <div class="popUp__subtitle">Оставьте заявку и наш менеджер свяжется с вами в течение 10-15 минут</div>
+          <div class="input"> 
+            <input id="name" type="text" placeholder=" ">
+            <label for="name">ВАШЕ ИМЯ</label>
+          </div>
+          <div class="input"> 
+            <input id="e-mail" type="text" placeholder=" ">
+            <label for="e-mail">E-MAIL</label>
+          </div>
+          <div class="input"> 
+            <input id="phone" type="text" placeholder=" ">
+            <label for="phone">ВАШ ТЕЛЕФОН</label>
+          </div>
+          <textarea class="popUp__question" id="text" placeholder=" "></textarea>
+          <label class="popUp__label" for="text">ВАШ ВОПРОС</label>
+          <div class="popUp__button">
+            <button class="button button--theme-light button--size-big">
+                          <svg class="icon icon-undefined ">
+                            <use xlink:href="/symbol/sprite.svg#undefined"></use>
+                          </svg><span class="button__subject">ОСТАВИТЬ ЗАЯВКУ</span>
+            </button>
+          </div>
+          <p class="popUp__agreement">Нажимая на кнопку “Оставить заявку”, вы соглашаетесь<a class="popUp__link" href="#"> с “Пользовательским соглашением”</a></p>
+        </div>
+      </div>
     </main>
-    <footer class="footer"> </footer>
     <script src="js/main.min.js"></script>
   </body>
 </html>

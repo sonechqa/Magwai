@@ -70,3 +70,11 @@ button.addEventListener(`click`, function () {
       });
     });
 });
+
+const leaveRequests = document.querySelectorAll(`[data-request]`);
+const popUp = document.querySelector(`.popUp`);
+leaveRequests.forEach((leaveRequest) => {
+  leaveRequest.addEventListener(`click`, function () {
+    popUp.classList.toggle(`popUp--active`);
+  });
+});

@@ -82,6 +82,10 @@
                         padding: 20px 50px;
                     }
 
+                    @media screen and (max-width: 1505px) {
+                        padding: 20px 40px;
+                    }
+
                     @media screen and (max-width: 620px) {
                         padding: 20px 30px;
                     }
