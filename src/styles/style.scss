@@ -1,7 +1,10 @@
 body {
     background-color: #272727;
-}
 
+    &.body--notScroll {
+        overflow: hidden;
+    }
+}
 
 
 @import 'utils/fonts';

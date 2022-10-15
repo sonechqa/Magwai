@@ -39,11 +39,9 @@ splide.on(`move`, (index) => {
 
 const burger = document.querySelector(`.burger`);
 const header = document.querySelector(`.header`);
-const slider = document.querySelector(`.slider`);
 burger.addEventListener(`click`, function () {
   burger.classList.toggle(`burger--active`);
   header.classList.toggle(`header--overlay`);
-  slider.classList.toggle(`slider--down`);
 });
 
 const button = document.querySelector(`.cards__button`);
@@ -73,8 +71,16 @@ button.addEventListener(`click`, function () {
 
 const leaveRequests = document.querySelectorAll(`[data-request]`);
 const popUp = document.querySelector(`.popUp`);
+const body = document.querySelector(`body`);
 leaveRequests.forEach((leaveRequest) => {
   leaveRequest.addEventListener(`click`, function () {
     popUp.classList.toggle(`popUp--active`);
+    body.classList.add(`body--notScroll`);
   });
+});
+
+const closePopUp = document.querySelector(`.popUp__close`);
+closePopUp.addEventListener(`click`, function () {
+  popUp.classList.remove(`popUp--active`);
+  body.classList.remove(`body--notScroll`);
 });

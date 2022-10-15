@@ -1,19 +1,30 @@
 .popUp
-    img(src="img/pop-up/moon.png" alt="Луна")
-    .popUp__request
-        .popUp__title ОСТАВЬТЕ ЗАЯВКУ
-        .popUp__subtitle Оставьте заявку и наш менеджер свяжется с вами в течение 10-15 минут
-        each val in [{label: "ВАШЕ ИМЯ", id: "name"}, {label: "E-MAIL", id: "e-mail"}, {label: "ВАШ ТЕЛЕФОН", id: "phone"}]
-            - label = val.label;
-            - id = val.id;
-            include ../components/input
-        textarea.popUp__question(id="text" placeholder=" ")
-        label.popUp__label(for="text")="ВАШ ВОПРОС"
-        .popUp__button
-            - buttonText = 'ОСТАВИТЬ ЗАЯВКУ'
-            - buttonTheme = 'light'
-            - buttonSize = 'big'
-            - dataRequest = false
-            include ../components/button
-        p.popUp__agreement Нажимая на кнопку “Оставить заявку”, вы соглашаетесь
-            a.popUp__link(href="#")  с “Пользовательским соглашением”
+    .popUp__wrapper.container
+        .popUp__image
+            img(src="img/pop-up/moon1.png" alt="Луна")
+        .popUp__request
+            .popUp__title ОСТАВЬТЕ ЗАЯВКУ
+            .popUp__close
+                - buttonIcon = 'cross'
+                - buttonTheme = 'dark'
+                - buttonSize = 'small'
+                - buttonText = undefined
+                include ../components/button
+            .popUp__subtitle Оставьте заявку и наш менеджер свяжется с вами в течение 10-15 минут
+            each val in [{label: "ВАШЕ ИМЯ", id: "name"}, {label: "E-MAIL", id: "e-mail"}, {label: "ВАШ ТЕЛЕФОН", id: "phone"}]
+                - label = val.label;
+                - id = val.id;
+                include ../components/input
+            .popUp__textArea
+                textarea.popUp__question(id="text" placeholder=" ")
+                label.popUp__label(for="text")="ВАШ ВОПРОС"
+            .popUp__confirmation
+                .popUp__button
+                    - buttonIcon = undefined
+                    - buttonText = 'ОСТАВИТЬ ЗАЯВКУ'
+                    - buttonTheme = 'light'
+                    - buttonSize = 'big'
+                    - dataRequest = false
+                    include ../components/button
+                p.popUp__agreement Нажимая на кнопку “Оставить заявку”, вы соглашаетесь
+                    a.popUp__link(href="#")  с “Пользовательским соглашением”

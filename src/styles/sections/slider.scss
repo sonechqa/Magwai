@@ -1,6 +1,7 @@
 .slider {
     margin-top: 30px;
     position: relative;
+    background: linear-gradient(0deg, #131313 0%, rgba(19, 19, 19, 0) 100%);
 
     .splide__track {
         z-index: -2;
@@ -10,7 +11,7 @@
         width: 100%;
         height: auto;
         object-fit: cover;
-      }
+    }
 
     &__sections {
         position: absolute;
@@ -33,16 +34,13 @@
         }
     }
 
-    &--down {
-        margin-top: 500px;
-    }
-
     &__titles {
         opacity: 0;
         max-width: 685px;
         position: absolute;
         left: 5%;
         bottom: 15%;
+
         &--active {
             opacity: 1;
         }
@@ -84,6 +82,7 @@
 
     &__button {
         .button {
+            z-index: 1;
             &--size {
                 &-big {
                     @media screen and (max-width: 450px) {
