@@ -28,7 +28,7 @@
     label {
         position: absolute;
         left: 0;
-        top: 35%;
+        top: 20px;
         padding-left: 35px;
         transition: transform 0.3s, transform-origin 0.3s;
         font-family: 'Montserrat';
@@ -36,5 +36,27 @@
         font-weight: 700;
         font-size: 16px;
         color: #FFFFFF;
+    }
+
+    &__error {
+        opacity: 0;
+        max-height: 0;
+        transition: opacity ease 1s, max-height ease 1s;
+    }
+
+    .erroneous {
+        border: 1px solid #c94b4b;
+        transition: border ease 0.3s;
+    }
+
+    .erroneous ~ p {
+        opacity: 1;
+        max-height: 20px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        color: #c94b4b;
+        margin-bottom: 0;
     }
 }

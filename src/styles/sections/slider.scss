@@ -43,6 +43,24 @@
 
         &--active {
             opacity: 1;
+
+            .slider__title {
+                opacity: 1;
+                transform: translateY(0px);
+                transition-delay: 250ms;
+            }
+
+            .slider__subtitle {
+                opacity: 1;
+                transform: translateY(0px);
+                transition-delay: 350ms;
+            }
+
+            .slider__button {
+                opacity: 1;
+                transform: translateY(0px);
+                transition-delay: 450ms;
+            }
         }
     }
 
@@ -52,6 +70,9 @@
         font-weight: 700;
         font-size: 42px;
         color: #FFFFFF;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity ease 0.7s, transform ease 0.7s;
 
         @media screen and (max-width: 1020px) {
             font-size: 36px;
@@ -74,6 +95,9 @@
         color: #FFFFFF;
         opacity: 0.79;
         margin-bottom: 40px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity ease 0.7s, transform ease 0.7s;
 
         @media screen and (max-width: 710px) {
             width: 70%;
@@ -81,6 +105,9 @@
     }
 
     &__button {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity ease 0.7s, transform ease 0.7s;
         .button {
             z-index: 1;
             &--size {

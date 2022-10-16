@@ -1,11 +1,12 @@
 .burger {
-    @media screen and (min-width: 1521px) {
-        display: none;
-    }
     cursor: pointer;
     position: relative;
     height: 18px;
     width: 30px;
+
+    @media screen and (min-width: 1521px) {
+        display: none;
+    }
 
     &__line {
         background-color: #FFFFFF;
@@ -35,6 +36,7 @@
             display: none;
         }
     }
+    
     &--active {
         .burger {
             &__line {

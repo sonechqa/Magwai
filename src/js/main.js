@@ -1,4 +1,5 @@
 import Splide from "../modules/@splidejs/splide/dist/js/splide.esm";
+import IMask from "imask";
 
 const splide = new Splide(`.splide`, {
   type: `fade`,
@@ -83,4 +84,28 @@ const closePopUp = document.querySelector(`.popUp__close`);
 closePopUp.addEventListener(`click`, function () {
   popUp.classList.remove(`popUp--active`);
   body.classList.remove(`body--notScroll`);
+});
+
+const phone = document.getElementById(`phone`);
+const maskOptions = {
+  mask: `+{7} (000) 000-00-00`,
+};
+IMask(phone, maskOptions);
+
+const buttonError = document.querySelector(`.popUp__button`);
+const fields = document.querySelectorAll(`input, .popUp__question`);
+buttonError.addEventListener(`click`, function () {
+  let check = 0;
+  fields.forEach((field) => {
+    if (field.value === ``) {
+      field.classList.add(`erroneous`);
+    } else {
+      field.classList.remove(`erroneous`);
+      check += 1;
+    }
+  });
+  if (check === fields.length) {
+    popUp.classList.remove(`popUp--active`);
+    body.classList.remove(`body--notScroll`);
+  }
 });

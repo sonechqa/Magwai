@@ -11,13 +11,14 @@
                 - buttonText = undefined
                 include ../components/button
             .popUp__subtitle Оставьте заявку и наш менеджер свяжется с вами в течение 10-15 минут
-            each val in [{label: "ВАШЕ ИМЯ", id: "name"}, {label: "E-MAIL", id: "e-mail"}, {label: "ВАШ ТЕЛЕФОН", id: "phone"}]
+            each val in [{label: "ВАШЕ ИМЯ*", id: "name"}, {label: "E-MAIL*", id: "e-mail"}, {label: "ВАШ ТЕЛЕФОН*", id: "phone"}]
                 - label = val.label;
                 - id = val.id;
                 include ../components/input
             .popUp__textArea
                 textarea.popUp__question(id="text" placeholder=" ")
-                label.popUp__label(for="text")="ВАШ ВОПРОС"
+                label.popUp__label(for="text")="ВАШ ВОПРОС*"
+                p.popUp__error Является обязательным полем
             .popUp__confirmation
                 .popUp__button
                     - buttonIcon = undefined
